@@ -36,7 +36,7 @@ import { AuthGuard } from './guards/auth.guard'
             { path: '', component: HomeComponent, canActivate: [AuthGuard] },
             { path: 'login', component: LoginComponent },
             // otherwise redirect to home
-            { path: '**', redirectTo: 'home' }
+            { path: '**', redirectTo: '/' }
         ])
     ]
 })
